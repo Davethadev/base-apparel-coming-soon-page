@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.logo {
+    padding-top: 2rem;
+}
+
+.hero {
+    width: 55vw;
+    background: linear-gradient(
+        135deg,
+        hsl(0, 0%, 100%),
+        hsl(0, 100%, 98%),
+        hsl(0, 80%, 86%),
+        hsl(0, 74%, 74%)
+    )
+    
+}
+
+.hero-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.65rem;
+    width: 55%;
+    padding: 6rem 0 1.2rem;
+}
+
+.hero-text h1 span {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+.hero-text p {
+    width: 82.5%;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.45;
+}
+
+.hero-image {
+    background: url('./images/hero-desktop.jpg') no-repeat center center /cover;
+    height: 100vh;
+    width: 45vw;
+}
+
+.hero-image-mobile {
+    display: none;
+}
+
+input {
+    width: 80%;
+    padding: 0.65rem 1rem;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid hsl(0, 74%, 74%);
+    margin-top: 1.5rem;
+    /* position: relative;
+    flex: 1; */
+}
+
+input:focus {
+    appearance: none;
+    border: 1px solid hsl(0, 74%, 74%);
+}
+
+::placeholder {
+    color: hsl(0, 80%, 86%);
+}
+
+.email-arrow-icon-wrapper {
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+    width: 100%;
+}
+
+.arrow-icon {
+    background: hsl(0, 74%, 74%);
+    padding: 1.2rem 2.5rem;
+    border-radius: 20px;
+    display: inline-flex;
+    position: relative;
+    top: 15px;
+    right: 65px;
+    border: none;
+    /* right: 0; */
+}
+
+.arrow-icon img {
+    position: absolute;
+    top: 25%;
+}
+
+@media(max-width: 760px) {
+    body {
+        background-color: hsl(0, 100%, 98%);
+    }
+
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .logo {
+        padding: 2rem;
+    }
+
+    .hero {
+        width: 100vw;
+        background: linear-gradient(
+            hsl(0, 0%, 100%),
+            hsl(0, 100%, 98%)
+        );
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-image-mobile {
+        display: block;
+        /* background: url('./images/hero-mobile.jpg') no-repeat center center /cover;
+        height: 50vw; */
+        width: 100%;
+    }
+
+    .hero-image-mobile img {
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .hero-text p {
+        width: 100%;
+        padding: 0 0.7rem;
+    }
+
+    .email-arrow-icon-wrapper {
+        width: 100%;
+        padding: 0 1.2rem;
+    }
+
+    input {
+        width: 90%;
+        /* margin: 0 auto; */
+    }
+
+    .arrow-icon {
+        padding: 1.2rem 1.8rem;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+    }
+
+    .arrow-icon img {
+        /* left: 0; */
+        right: 35%;
+        text-align: center;
+    }
+}
