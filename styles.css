@@ -116,7 +116,8 @@ input:focus {
 
     .container {
         flex-direction: column;
-        height: 100vh;
+        /* height: 100vh; */
+        padding-bottom: 4rem;
     }
 
     .logo {
